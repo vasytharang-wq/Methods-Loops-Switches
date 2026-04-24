@@ -1,24 +1,38 @@
 <html>
     <head>
-        <title>Loops Methods, & switches</title>
+        <title>Methods, Loops</title>
     </head>
     <body>
-        <h2>Javascript String Methods</h2>
-        <p>Basic Methods</p>
-        <script>
-          var str = "AmAzInG";
-         document.write(str.toUpperCase());
-         document.write("<br>");
-         document.write(str.toLowerCase());
-         document.write("<br>")
-         document.write(str.startsWith('i'));
-        document.write("<br>")
+        <h2>Cars</h2>
+        <p id="demo">The English word car is believed to originate from Latin carrus/carrum "wheeled vehicle" or (via Old North French) Middle English carre "two-wheeled cart", both of which in turn derive from Gaulish karros "chariot". It originally referred to any wheeled horse-drawn vehicle, such as a cart, carriage, or wagon. The word also occurs in other Celtic languages.
 
-       //Test MEthod -> returns true or false
-       var str1 ="I learnt about Methods";
-       var patt= new RegExp('t');
-       var res =  patt.test(str1);
+"Motor car", attested from 1895, is the usual formal term in British English. "Autocar", a variant likewise attested from 1895 and literally meaning "self-propelled car", is now considered archaic. "Horseless carriage" is attested from 1895.
+
+"Automobile", a classical compound derived from Ancient Greek autós (αὐτός) "self" and Latin mobilis "movable", entered English from French and was first adopted by the Automobile Club of Great Britain in 1897. It fell out of favour in Britain and is now used chiefly in North America, where the abbreviated form "auto" commonly appears as an adjective in compound formations like "auto industry" and "auto mechanic".</p><br><br><br>
+<p id="cargo"></p>
+        <script>
+        
+        var str = "CArs";
+        var str1 =  "bugati, lambogini, tesla, ferrari, chevelotte, porche, mustang";
+        document.write(str.toUpperCase());
+        document.write("<br>");
+        document.write(str1.toLocaleUpperCase());
+        document.write("<br><br>")
+         var patt= new RegExp('t');
+       var res =  patt.test(demo);
        document.write(res); 
+
+          var cars = ["bugati", "lambogini", "tesla", "ferrari", "chevelotte", "porche", "mustang"];
+      
+            var text = "";
+            var i;
+            for (i = 0; i < cars.length; i++){
+                text += cars[i] + "<br>";
+            }
+            document.getElementById("cargo"
+        ).innerHTML = text;
+
+
         </script>
     </body>
 </html>

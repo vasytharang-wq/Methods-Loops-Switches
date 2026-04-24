@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Switches</title>
+</head>
+<body>
+<p>Refresh page to restart and roll</p>
+<p id="demo"></p>
+
+<script>
+let Random = Math.floor(Math.random() * 4); // 0, 1, or 2
+
+switch (Random) {
+    case 0:
+        document.write("You got 0<br>");
+        break;
+    case 1:
+        document.write("You got 1<br>");
+        break;
+    case 2:
+        document.write("You got 2<br>");
+        break;
+    case 3:
+        document.write("you got 3<br>");
+        break;   
+    default:
+        document.write("Unknown value<br>");
+}
+
+document.getElementById('demo').innerHTML = "The number is " + Random;
+</script>
+
+</body>
+</html>
